@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .top-bar {
+    background: #a60000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo-section h1 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+  }
+  
+  .nav-links button,
+  .nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #a60000; /* Dark red color for text */
+    border: 2px solid #ffffff; /* Red border for buttons */
+    background-color: transparent; /* Transparent background */
+    padding: 8px 16px;
+    border-radius: 25px; /* Curvy end for the buttons */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links button:hover,
+  .nav-links a:hover {
+    background-color: #a60000; /* Red background on hover */
+    color: #fff; /* White text on hover */
+  }
+  
+  .nav-links button:first-child {
+    background-color: #f9f4e5; /* Light background for Reservations */
+    border-color: #e5b9a7; /* Light border color for Reservations */
+    color: #a60000; /* Red text */
+  }
+  
+  .nav-links button:first-child:hover {
+    background-color: #e5b9a7; /* Darker light background for hover */
+  }
+  
+  .nav-links button:last-child {
+    background-color: #a60000; /* Dark red background for Order Online */
+    border-color: #800000; /* Darker border for Order Online */
+    color: white; /* White text */
+  }
+  
+  .nav-links button:last-child:hover {
+    background-color: #800000; /* Darker red background on hover */
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #000;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    width: 250px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .mobile-menu.active {
+    display: block;
+  }
+  
+  .mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .mobile-menu a,
+  .mobile-menu button {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #a60000; /* Border for mobile menu buttons */
+    background-color: #fff; /* White background for the button */
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .mobile-menu a:hover,
+  .mobile-menu button:hover {
+    background-color: #a60000;
+    color: #fff; /* White text on hover */
+    border: 2px solid #800000; /* Slight darker border on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .hamburger {
+      display: flex; /* Show hamburger on small screens */
+    }
+  }
+  
